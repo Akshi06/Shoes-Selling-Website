@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <!-- <script src="jquery-ui-1.9.0.custom.min.js"></script> -->
     <script src="./jquerya.js"></script>
     <script src="./jquery-ui.js"></script>
     <link href="./jquery-ui.css" rel="stylesheet">
@@ -72,6 +71,7 @@
         <div class="print-search-engin">
             <fieldset>   
                 <div class="set1">
+                    <!-- ---------------gender----------------------------- -->
                     <label for="Gender">Gender :</label>
                     <select name="Gender" id="Gender">
                         <option value="Any" selected>Any</option>
@@ -80,7 +80,7 @@
                         <option value="Kids">Kids</option>
                         
                     </select>
-
+                    <!-- ---------------style----------------------------- -->
                     <label for="style">Style :</label>
                     <select name="style" id="style">
                         <option value="Any" selected>Any</option>
@@ -92,7 +92,7 @@
                         <option value="Boot">Boots</option>
                         
                     </select>
-
+                    <!-- ---------------colour----------------------------- -->      
                     <label for="colour">Colour :</label>
                     <select name="colour" id="colour">
                         <option value="Any" selected>Any</option>
@@ -107,12 +107,13 @@
                         
                     </select>
                 </div>
-                
+                <!-- ---------------size----------------------------- -->
                 <div class="set2">
                     <div class="sizeSel">
                         <label for="spinner">Size :</label>
-                        <input id="spinner" value="3"  style="width: 30px;">
+                        <input id="spinner" value="Any" style="width: 30px;">
                     </div>
+                    <!-- ---------------price----------------------------- -->
                     <div class="priceSel">
                         <label for="slider">Price Range :</label>
                         <input type="text" id="amount" name="slider" readonly class="goldSliderText">
@@ -203,7 +204,7 @@
                     "name":"Pure Tone",
                     "gender":"Women",
                     "style":"Flat",
-                    "sizes":[4, 4.5, 5, 5.5, 6, 6.5, 7],
+                    "sizes":4, 
                     "price":75.00,
                     "colour":"Black",
                     "description":"These chic snake print shoes are crafted from a combination of soft leather and nubuck. For ultimate versatility, they feature a heel piece that folds down - allowing them to be worn as slip-ons or mules. The simple yet sophisticated upper is teamed with a low 2cm heel and rubber outsole to help with grip, while a leather lining and sock work together with our dual density Cushion Plus™ technology to provide comfort in every step.",           
@@ -216,7 +217,7 @@
                     "name":"Orinoco 2 Lace",
                     "gender":"Women",
                     "style":"Boot",
-                    "sizes":[5, 6, 7],
+                    "sizes":5, 
                     "price":89.00,
                     "colour":"Brown",
                     "description":"Refreshing our bestselling Orinoco profile, a lace-up ankle boot that stays all day wearable. The premium dark olive leather upper stays classic and crafted while the cleated sole with 3cm heel feels durable and adds grip. Perfect to step into the season with casual style.",
@@ -229,7 +230,7 @@
                     "name":"Vista Strap White Combi",
                     "gender":"Women",
                     "style":"Heels",
-                    "sizes":[3, 4, 4.5, 5, 5.5, 6, 6.5, 7],
+                    "sizes":3,
                     "price":89.00,
                     "colour":"White Combi",
                     "description":"Strappy Vista Strap platform sandal in white combination has a high sculptured heel to create a feminine, powerful profile for parties or everyday statement wear. With responsibly sourced leather for the upper and lining, an Eco Foam footbed and recycled content in the heel and sole, it is the conscious choice.",            
@@ -242,7 +243,7 @@
                     "name":"Aceley Lace Light Pink",
                     "gender":"Women",
                     "style":"Canvas",
-                    "sizes":[3, 4, 4.5, 5, 5.5, 6, 6.5, 7, 8],
+                    "sizes": 5, 
                     "price":69.00,
                     "colour":"Light Pink",
                     "description":"Experience comfort in its purest form with our new eco-friendly trainer, Aceley Lace. Responsibly sourced light pink suede uppers help lighten environmental footprint, teaming with durable recycled rubber and bio-based soles and recycled foam cushioning for earth-friendly comfort underfoot. Finished with recycled laces and recycled cotton linings, its ultra-light Strobel construction enhances flexibility, too – perfect for the spring-summer season.",
@@ -255,7 +256,7 @@
                     "name":"Jocelynne Cam Natural Snake",
                     "gender":"Women",
                     "style":"Heels",
-                    "sizes":[3, 4, 4.5, 5, 5.5, 6, 6.5, 7, 8],
+                    "sizes":6,
                     "price":55.00,
                     "colour":"Natural Snake",
                     "description":"With an elegant upper in natural snake, Jocelynne Cam combines a contemporary block heel and innovative Ultimate Comfort foam footbed to create a timeless look that is just as at home dressed up for an event as it is on a casual weekend.",            
@@ -268,7 +269,7 @@
                     "name":"Nature Trek Tan Combi",
                     "gender":"Mens",
                     "style":"Sandal",
-                    "sizes":[3, 4, 4.5, 5, 5.5, 6, 6.5, 7, 8, 8.5, 9, 9.5, 10, 10.5, 11, 12],
+                    "sizes":7,
                     "price":89.00,
                     "colour":"Tan Combi",
                     "description":"With iconic styling that taps into an essential Clarks heritage, Nature Trek is a wraparound sandal that adjusts across the foot for full comfort. The leather-lined upper in premium tan combi leathers sits on an ergonomic footbed that gives stability. The grippy rubber sole features recycled content and a lifetime of depth of comfort.",
@@ -281,7 +282,7 @@
                     "name":"James Wing Light Tan Leather",
                     "gender":"Mens",
                     "style":"Smart Shoes",
-                    "sizes":[7, 7.5, 8, 8.5, 9, 9.5, 10],
+                    "sizes": 8,
                     "price":130.00,
                     "colour":"Light Tan Leather",
                     "description":"Part of our premium Craftmaster collection, this classic wingtip brogue in tan leather has a contemporary hand finish. Expertly crafted with a flexible welt and leather sole, it also targets underfoot cushioning for all-day comfort.",            
@@ -294,7 +295,7 @@
                     "name":"Toddler Navy Canvas",
                     "gender":"Kids",
                     "style":"Canvas",
-                    "sizes":[4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5],
+                    "sizes":9,
                     "price":22.00,
                     "colour":"Navy Blue",
                     "description":"An iconic summer essential, City Bright has been specifically designed for all-day play. As well as the fun design, practical features include the lightweight canvas upper, flexible EVA cushioned sole and adjustable riptape straps. Tested by real kids, summer styling has never been so easy. Machine washable. Available in whole and half sizes and different widths.",            

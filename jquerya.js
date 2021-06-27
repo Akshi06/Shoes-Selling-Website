@@ -33,7 +33,7 @@ $(function(){
     $("#amount").val(" £" + $(" #slider-range").slider( "values", 0 ) + " - £" + $("#slider-range").slider( "values", 1 ) );
 });
 
-
+// -----------------------filler's jquery-----------------------------------------------
 $(function(){
     $( "#Search" ).on("click", function(){
 
@@ -50,20 +50,19 @@ $(function(){
                 if(( Gender == data.shoes[i].gender) || (Gender=="Any"))
                 if(( style == data.shoes[i].style) || (style=="Any"))
                 if(( colour == data.shoes[i].colour) || (colour=="Any"))
-                if(( data.shoes[i].sizes = size  ))
+                if(( data.shoes[i].sizes == size) || (size == "Any"))
                 if(( data.shoes[i].price >= minPrice && data.shoes[i].price <= maxPrice ))
                 {
                     {
                         {
                             {
                                 var f = a++;
-                                // console.log(f);
                                 output += " <li data id = '" +f +" class ='idli'>"+"<div class = 'print'>"
                                 + "<span class 'name'>"+ data.shoes[i].name +"</span>" + 
                                 "<div class = 'deltailShoes'>"+ "<img src = " + data.shoes[i].picture + " >"  + 
                                 "<div class = 'shortDes'> <h4> Gender &rarr;"+ data.shoes[i].gender+"</h4>  <h4> Colour &rarr;"+ data.shoes[i].colour+"</h4> <h4> Price &rarr; £"+ data.shoes[i].price+" .00 </h4><a href='" + data.shoes[i].url + "' target='blank'><button class ='button' >Buy</button></a>  " 
                                 +"</div>" +"</div>" + "</div>" + "</li>";                        
-                            }//..................................................................................................................................................<input type="submit" value=' Once or Twice ' name='favBtn ' class="favBtn" />
+                            }
                         }
                     }
                 }
@@ -73,7 +72,7 @@ $(function(){
         output+="</ul>";
         document.getElementById( "custom" ).innerHTML = output ;
 
-        // draggable & droppable jquerya
+        //---------------------- draggable & droppable jquerya---------------------
 
         $("li").draggable({
             revert:true,
@@ -107,7 +106,6 @@ $(function(){
                 }
                 else{
                     addBasket(basket, move);
-                    // shoesIodToAdd = $(this).closest("span") .attr("class");
                     move.find("input").val(parseInt(move.find("input").val()) + 1);
                     alert( "shose is drop in to favourites list" );
                     localStorage.setItem('favShoesDrag',move.html());
@@ -145,12 +143,11 @@ $(function(){
     });
 });
 
-// shoes add fav
+//-------------------------------------------- shoes add fav-----------------------------
 $(function() {
 	$( ".addFavourites" ).on("click", function(){
         console.log("addfav");
 		
-		// try {
 			$(this).attr('abled', true);
 			
 			var shoesIdToAdd = $(this).closest("p").attr("id");
