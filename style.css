@@ -1,10 +1,8 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: Montserrat,sans-serif;
 }
-
-/*nav bar css*/
+/*--------------nav bar css--------------------*/
 li{
     list-style:none;
 }
@@ -15,13 +13,11 @@ cursor:default;
 
 .navtop {
     overflow: hidden;
-    font-family: 'Oswald', sans-serif;
 }
 
 .navtop a {
     float: left;
     display: block;
-    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     margin:0 1%;
@@ -29,6 +25,7 @@ cursor:default;
     font-size: 17px;
     transition:0.5s;
 }
+
 .navtop .icon {
     display: none;
 }
@@ -44,9 +41,7 @@ cursor:default;
     font-size: 17px;    
     border: none;
     outline: none;
-    color: white;
     padding: 14px 16px;
-    font-family: inherit;
     margin: 0;
     transition:0.5s;
 }
@@ -61,7 +56,6 @@ cursor:default;
 
 .dropdownNav-contentNav a {
     float: none;
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -84,11 +78,6 @@ cursor:default;
     transition:0.5s;
 }
 
-.dropdownNav-contentNav li a:hover{
-    background:none;
-    color:#2874f0;
-}
-
 .megaNav-menuNav{
     background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url("./iconimg/photo-1463100099107-aa0980c362e6.jpg");
     background-repeat:no-repeat;
@@ -103,20 +92,12 @@ cursor:default;
 
 .dropdownNav-contentNav a {
     float: none;
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-.navtop a:hover, .dropdownNav:hover .dropbtnNav {
-    color:#2874f0;
-}
-
-.dropdownNav-contentNav a:hover {
-    color: black;
-}
 
 .dropdownNav:hover .dropdownNav-contentNav {
     display: block;
@@ -151,7 +132,6 @@ cursor:default;
 }
 
 #playpausebtn{
-    background: none;
     cursor: pointer;
     height: 30px;
     width: 30px;
@@ -167,11 +147,11 @@ cursor:default;
     padding: 0;
     margin: 0;
     background-color: rgb(13, 17, 22); 
-    color: #fff;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
+
 
 .print-search-engin{
     width: 100%;
@@ -222,7 +202,6 @@ fieldset{
 }
 
 .set3 button:hover{
-    color: white;
     font-weight: 600;
 }
 
@@ -240,10 +219,10 @@ fieldset{
     height: auto;
     display: grid;
     grid-template-columns: auto auto;
-    background: none;
     align-items: center;
     justify-content: center;
 }
+
 
 .resultbox{
     box-sizing: border-box;
@@ -346,7 +325,6 @@ li {
     margin: 0 10px;
     height: 26px;
     line-height: 26px;
-    color: #666;
     border-bottom: 1px solid #ddd;
 }
 
@@ -417,24 +395,17 @@ li {
     text-align: center;
     font-size: 11px;
     border: 0;
-    color: #EE5757;
     border-radius: 3px;
     cursor: pointer;
     transition: opacity .2s ease;
 }
+
 
 .basket ul li:hover button.delete {
     filter: alpha(opacity = 100);
     opacity: 1;
 }
 
-.basket ul li button.delete:hover {
-    color: #fff;
-}
-
-.basket ul li button.delete:active {
-    color: #fff;
-}
 /*----pop ? ---*/
 .helpBk {
     width: 100px;
@@ -508,9 +479,9 @@ li {
 }
 .topicAu{
     font-size: 36px;
-    font-family: 'Oswald', sans-serif;
     letter-spacing: 5px;
 }
+
 .history{
     margin-top: 10px;
     justify-content: center;
@@ -523,11 +494,9 @@ li {
 .hDetail{
     font-size: 20px;
     word-spacing: 5px;
-    font-family:Montserrat,Arial,sans-serif;
-    color: rgb(85, 84, 84);
 }
+
 hr{
-    color: rgb(187, 185, 185);
     display:flex;
     margin-left: 10%;
     margin-right: 10%;
@@ -569,25 +538,24 @@ hr{
     /* margin-top: 50px; */
     margin-bottom: 80px;
     text-transform: uppercase;
-    color: rgb(245, 0, 0);
     font-size: 60px;
     letter-spacing: 3px;
 }
+
 .conIn, .conForm{
     flex: 1;
 }
 .conItem{
     margin-bottom: 24px;
     font-size: 16px;
-    color:#322;
 }
+
 .iconCon{
     width: 40px;
     height: 40px;
     /* line-height: 60px; */
     padding-top: 2.5%;
     text-align: center;
-    color: #fff;
     border-radius: 50%;
     margin-right: 16px;
 }
@@ -601,10 +569,8 @@ hr{
     height: 40px;
     padding: 12px;
     border: none;
-    color: #fff;
     margin-bottom: 20px;
 }
-
 textarea{
     width: 100%;
     min-height: 200px;
@@ -612,25 +578,22 @@ textarea{
     resize: vertical;
     padding: 12px;
     border: none;
-    color: #fff;
     margin-bottom: 20px;
 } 
+
 .ConBtn{
     width: 120px;
     height: 40px;
     margin-left: auto;
     border: none;
-    color: #fff;
     text-transform: uppercase;
     cursor: pointer;
     border: 2px solid #db3434;
     transition: .3s linear;
 }
-.ConBtn:hover{
-    color: #3494db;
-}
 
-/* backgroud color*/
+
+/*-------------------- backgroud color---------------------------------------*/
 body, .megaNav-menuNav {background-color:white;}
 .navtop {background-color: #333;}
 .dropdownNav .dropbtnNav {background-color: inherit;}
@@ -638,7 +601,7 @@ body, .megaNav-menuNav {background-color:white;}
 .dropdownNav-contentNav a:hover, .basket ul li input.count{background-color: #ddd;}
 fieldset{background-color: rgba(0, 0, 0, 0.712);}
 .basket.active .basket_list { background-color: #fff8c1 }
-.basket.hover .basket_list, .basket ul li button.delete:hover  { background-color: #ffa0a3 }
+.basket.hover .basket_list, .basket ul li button.delete:hover{ background-color: #ffa0a3 }
 .helpBk .popupBk , .basket ul li button.delete {background-color: #eee;}
 .helpBk .questionBk {background-color: #ccc;}
 .basket ul li button.delete:active {background-color: #EE5757;}
@@ -648,6 +611,27 @@ fieldset{background-color: rgba(0, 0, 0, 0.712);}
 .iconCon, .ConBtn{background-color: #db3434;}
 #textF, textarea{background-color: #222;}
 .ConBtn:hover{background-color: transparent;}
+.dropdownNav-contentNav li a:hover , #playpausebtn , #custom{background:none;}
+
+/* ---------------------------------font-colour-------------------------------------- */
+.navtop a {color: #f2f2f2;}
+.dropdownNav .dropbtnNav , .set3 button:hover , .basket ul li button.delete:hover {color: white;}
+.dropdownNav-contentNav a , .dropdownNav-contentNav a , .dropdownNav-contentNav a:hover {color: black;}
+.dropdownNav-contentNav li a:hover , .navtop a:hover, .dropdownNav:hover .dropbtnNav { color:#2874f0;}
+.section1, .basket ul li button.delete:active , .iconCon,#textF , textarea , .ConBtn{ color: #fff;}
+.basket .head {color: #666;}
+.basket ul li button.delete { color: #EE5757;}
+.hDetail{color: rgb(85, 84, 84);}
+hr{color: rgb(187, 185, 185);}
+.h2{color: rgb(245, 0, 0);}
+.conItem{ color:#322;}
+.ConBtn:hover{color: #3494db;}
+
+/* ----------------------font-family---------------------------------------- */
+body{ font-family: Montserrat,sans-serif;}
+.navtop , .topicAu{font-family: 'Oswald', sans-serif;}
+.dropdownNav .dropbtnNav {font-family: inherit;}
+.hDetail{font-family:Montserrat,Arial,sans-serif;}
 
 
 /* ------------------media--------------- */
@@ -839,8 +823,6 @@ fieldset{background-color: rgba(0, 0, 0, 0.712);}
         text-align: left;
     }
 }
-
-
 
 @media screen and (max-width: 770px){
     .print-search-engin{
