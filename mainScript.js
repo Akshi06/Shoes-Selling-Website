@@ -210,12 +210,15 @@ $(function() {
         }
 	});
 });
+
+// -------------------------viwe all fav shoes-------------------------------------------------------------
 $(function(){
     $(".showLst").on("click", function(){
         
         console.log("View btn pressed");
 
         console.log("Getting FavList arry Data.");
+        // data assign json format
         myFavouriteShoes=JSON.parse(localStorage.getItem("favShoes"));
         console.log("Getting FavList arry Data 120.");
         var output = "<ul>";
@@ -242,7 +245,8 @@ $(function(){
         document.getElementById("fav").innerHTML = output;
     });
 });
-	
+
+
 
 
 
